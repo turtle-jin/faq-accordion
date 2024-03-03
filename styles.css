@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightPink: hsl(275, 100%, 97%);
+    --LightPurple:hsl(282,94%,55%);
+    --GrayishPurple: hsl(292, 16%, 49%);
+    --DarkPurple: hsl(292, 42%, 14%);   
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--LightPink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+}
+
+
+
+hr {
+    border: 0.8px solid var(--LightPink);
+    width: 100%;
+}
+
+.container {
+    width: 38rem;
+    
+    display: flex;
+    background-color: var(--White);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 2rem;
+    color: var(--DarkPurple);
+    gap: 2rem;
+}
+
+.title {
+    display: flex;
+    margin-right: auto;
+    font-size: 30px;
+    gap: 1rem;
+    color: var(--DarkPurple);
+}
+
+.question{
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;font-weight: 600;
+}
+
+.question :hover {
+    color: var(--LightPurple);
+    cursor: pointer;
+}
+
+.sections {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* border: solid; */
+    gap: 2rem;
+}
+
+.sections > p {
+    color: var(--GrayishPurple);
+    line-height: 1.5;
+    /* display: none; */
+}
+
