@@ -12,7 +12,7 @@ sections.forEach((section) => {
 function toggleAnswers(event) {
     // Find the clicked section
     const parentSection = event.currentTarget;
-    console.log(parentSection);
+    // console.log(parentSection);
     // Find the answers within the clicked section
     const directChildAnswers = parentSection.querySelector(".answers");
     let icon = parentSection.querySelector("img");
