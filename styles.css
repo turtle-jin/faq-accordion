@@ -79,10 +79,12 @@ hr {
     gap: 2rem;
 }
 
-.sections > p {
+.sections>p {
     color: var(--GrayishPurple);
     line-height: 1.5;
     display: none;
 }
 
-
+.sections.section1>p.answers {
+    display: flex;
+}
